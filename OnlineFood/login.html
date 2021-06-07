@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>Menu</div>
+        <div onclick="(window.location.href='login.html')">Login</div>
+        <div onclick="(window.location.href='signup.html')">Signup</div>
+    </nav>
+
+    <form action="" id="form">
+        <input id="email" type="text" placeholder="Email"><br>
+        <input id="password" type="password" placeholder="Password"><br>
+        <button onclick="logIn(event)">Login</button>
+    </form>
+</body>
+<script src="login.js"></script>
+
+</html>

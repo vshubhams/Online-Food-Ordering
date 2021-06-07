@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            margin: auto;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .container>div{
+            margin: 10px;
+            border: solid #ccc 1px;
+        }
+        .container>div>img{
+            width: 100%;
+        }
+        .container>div>p{
+            width: 100%;
+        }
+        .goCart{
+            width: 300px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div>Menu</div>
+        <div onclick="(window.location.href='login.html')">Login</div>
+        <div onclick="(window.location.href='signup.html')">Signup</div>
+    </nav>
+    <button class="goCart" onclick="goToCart()">Go To Cart</button>
+    <div class="container" id="grid">
+
+    </div>
+</body>
+<script src="menu.js"></script>
+</html>
